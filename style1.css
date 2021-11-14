@@ -1,0 +1,71 @@
+
+body {
+      font-family: 'Changa', sans-serif;
+    }
+
+  /*
+      CSS VIEJO
+  #title {
+    text-transform: uppercase;
+     text-shadow: rgba(0,0,0,.01) 0 0 10px;
+     color: white;
+    
+
+         -webkit-text-stroke: 0.07em #239AD6;
+       word-break: break-all;
+       margin-bottom: -2rem;
+  }
+  #subtitle {
+       text-shadow: rgba(0,0,0,.01) 0 0 10px;
+          color: white;
+           
+
+                    -webkit-text-stroke: 0.07em #239AD6;
+  }
+*/
+/*ESTILOS PARA EL BOTON*/
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter:brightness(0.70);
+  }
+  
+  .btn {
+    outline: 0.25rem #239AD6 solid;
+  border-radius: 1rem;
+  background-color: #FFFFFF;
+  border: none;
+  color: #239AD6;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
