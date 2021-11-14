@@ -41,3 +41,8 @@ function changevideo() {
     }
   }
 }
+document.getElementById("boton").addEventListener("click",function(){
+    setTimeout(function () {
+       window.location.href = "postit.html";
+    }, 2000);
+})
