@@ -41,8 +41,17 @@ function changevideo() {
     }
   }
 }
+/*
 document.getElementById("boton").addEventListener("click",function(){
     setTimeout(function () {
        window.location.href = "postit.html";
     }, 2000);
 })
+*/
+const $ = document.querySelector.bind(document);
+$('button').addEventListener("click", function() {
+  $('button').style.display = 'none';
+  $('section').style.display = 'block';
+    (document.getElementById("main")).remove();
+   window.location.href = "postit.html";
+});
