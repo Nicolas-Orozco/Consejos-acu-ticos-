@@ -100,3 +100,14 @@ p {
 p{
   display: grid;
 }
+#spinner {
+ background-color: #033470;
+ width: 100%;
+ height: 100vh;
+}
+.ocultar{
+ display: none;
+}
+body {
+   overflow-y: hidden;
+}

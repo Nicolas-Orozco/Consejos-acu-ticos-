@@ -65,3 +65,21 @@ $('button').addEventListener("click", function() {
     (document.getElementById("main")).remove();
    window.location.href = "postit.html";
 });
+window.onload = function(){
+    var fadeTarget = document.getElementById("spinner");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 0.5;
+        }
+        if (fadeTarget.style.opacity > 0) {
+            fadeTarget.style.opacity -= 0.15;
+        } else {
+            clearInterval(fadeEffect);
+        }
+        if (fadeTarget.style.opacity <= 0){
+           fadeTarget.remove();
+        }
+    }, 150);
+    var main = document.getElementById("main")
+    main.classList.remove("ocultar");
+}
