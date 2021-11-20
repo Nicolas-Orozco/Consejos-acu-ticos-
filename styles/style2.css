@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 710px){
+  embed{
+    max-height: 368.62px;
+    max-width: 695.76px;
+  
+}
+body {
+  background-color: red;
+}
+}
