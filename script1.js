@@ -1,3 +1,4 @@
+/*VIDEO SWITCH*/
 var count = 1;
 var video1 = document.getElementById("video1");
 var playPromise = video1.play()
@@ -51,13 +52,15 @@ function changevideo() {
     }
   }
 }
-/*
+
+/* OLD JS FOR CHANCHING PAGE
 document.getElementById("boton").addEventListener("click",function(){
     setTimeout(function () {
        window.location.href = "postit.html";
     }, 2000);
 })
 */
+/*FUNCTION TO CHANGE PAGE*/
 const $ = document.querySelector.bind(document);
 $('button').addEventListener("click", function() {
   $('button').style.display = 'none';
@@ -65,7 +68,10 @@ $('button').addEventListener("click", function() {
     (document.getElementById("main")).remove();
    window.location.href = "postit.html";
 });
-window.onload = function(){
+
+/*FUNCTION FOR LOADING SCREEN*/
+video1.addEventListener('loadeddata',function(){
+    this.function = function(){};
     var fadeTarget = document.getElementById("spinner");
     var fadeEffect = setInterval(function () {
         if (!fadeTarget.style.opacity) {
@@ -82,4 +88,4 @@ window.onload = function(){
     }, 150);
     var main = document.getElementById("main")
     main.classList.remove("ocultar");
-}
+});
