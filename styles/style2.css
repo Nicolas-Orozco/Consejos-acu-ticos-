@@ -1,6 +1,33 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
+body {
+  width:100%;
+}
+.line {
+  display:block;
+  position:absolute;
+  top:17%;
+  left:50%;
+  border-bottom:4px solid #9c9c9c;
+  width:0%;
+  text-align:center;
+  animation: line 2.3s linear forwards;
+}
+.line-2 {
+  display:block;
+  position:absolute;
+  top:16.6%;
+  left:50%;
+  border-bottom:4px solid #cecece;
+  width:0%;
+  text-align:center;
+  animation: line 2.3s linear forwards;
+}
+@keyframes line {
+  from {
+    left:0%;
+    width:0%;
+  }
+  to {
+    left:0%;
+    width:100%;
+  }
 }
