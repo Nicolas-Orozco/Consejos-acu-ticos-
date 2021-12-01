@@ -1,3 +1,6 @@
+body {
+     overflow-y: hidden;
+}
 .line {
   display:block;
   position:absolute;

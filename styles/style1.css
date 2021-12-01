@@ -1,6 +1,7 @@
 
 body {
       font-family: 'Changa', sans-serif;
+         overflow-y: hidden;
     }
 
   /*
@@ -107,7 +108,4 @@ p{
 }
 .ocultar{
  display: none;
-}
-body {
-   overflow-y: hidden;
 }
