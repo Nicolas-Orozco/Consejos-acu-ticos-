@@ -6,7 +6,7 @@ function changevideo() {
   for (let numero = 0; numero < 2; numero++) {
     switch (count) {
       case 1:
-        video1.poster = "images/posters/poster4.jpg";
+        video1.poster = "images/poster4.jpg";
         video1.src = "https://drive.google.com/uc?export=download&id=16ieR8-KC9ooK5-QGEIUTH53at45h5tAe";
         if (playPromise !== undefined) {
           playPromise.then(_ => {
@@ -16,7 +16,7 @@ function changevideo() {
         }
         break;
       case 2:
-        video1.poster = "images/posters/poster3.jpg";
+        video1.poster = "images/poster3.jpg";
         video1.src = "https://drive.google.com/uc?export=download&id=1eRSO5cFHzBu7zILbAwa6FdnqDwL5iN6s";
         if (playPromise !== undefined) {
           playPromise.then(_ => {
@@ -26,7 +26,7 @@ function changevideo() {
         }
         break;
       case 3:
-        video1.poster = "images/posters/poster2.jpg";
+        video1.poster = "images/poster2.jpg";
         video1.src = "https://drive.google.com/uc?export=download&id=11lQcd0MB6NoPMr3TIkwYgrTcrTqaRCqg";
         if (playPromise !== undefined) {
           playPromise.then(_ => {
@@ -36,7 +36,7 @@ function changevideo() {
         }
         break;
       case 4:
-        video1.poster = "images/posters/poster1.jpg";
+        video1.poster = "images/poster1.jpg";
         video1.src = "https://drive.google.com/uc?export=download&id=1R4zDjVc5l4BEtc0wVlHTD0ZHLN7OxK6x";
         if (playPromise !== undefined) {
           playPromise.then(_ => {
