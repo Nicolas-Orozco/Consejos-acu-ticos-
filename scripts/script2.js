@@ -9,9 +9,6 @@ window.onload = function(){
 ambient.volume = 0.08;
 ambient.play();
 }
-ambient.addEventListener('ended', () => {
-  ambient.play();
-})
 line1.addEventListener('animationend', () => {
   carousel.classList.remove("ocultar")
   carousel.classList.add("enterpostit")
