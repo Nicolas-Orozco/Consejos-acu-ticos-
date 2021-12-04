@@ -1,6 +1,5 @@
 body {
      overflow-x: hidden;
-     background-color: white;
 }
 .line {
   display:block;
@@ -58,5 +57,71 @@ body {
   100% {
     opacity: 1.0;
     padding-top:1%;
+  }
+}
+/*Flotado https://codepen.io/MarioDesigns/pen/woJgeo*/
+img {
+  	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.4);
+    	animation: flotar 6s ease-in-out infinite;
+}
+@keyframes flotar {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.4);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.4);
+		transform: translatey(0px);
+	}
+}
+img:hover{
+   filter: brightness(1.05);
+}
+/*https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100*/
+.waves {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px;
+  min-height:100px;
+  max-height:150px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
   }
 }
