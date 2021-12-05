@@ -1,4 +1,4 @@
-body {
+body{
      overflow-x: hidden;
 }
 .line {
@@ -60,9 +60,9 @@ body {
   }
 }
 /*Flotado https://codepen.io/MarioDesigns/pen/woJgeo*/
-img {
+.car-image {
   	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.4);
-    	animation: flotar 6s ease-in-out infinite;
+    	animation: flotar 2.8s ease-in-out infinite;
 }
 @keyframes flotar {
 	0% {
@@ -78,7 +78,7 @@ img {
 		transform: translatey(0px);
 	}
 }
-img:hover{
+.car-image:hover{
    filter: brightness(1.05);
 }
 /*https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100*/
@@ -125,3 +125,19 @@ img:hover{
     min-height:40px;
   }
 }
+#sun {
+  width:100px;
+  position: fixed;
+  right: 0;
+  top: 0;
+   animation: rotar 4s linear infinite;
+}
+    @keyframes rotar {
+              0% {
+                transform: rotate(0deg);
+              }
+            
+              100% {
+                transform: rotate(360deg);
+              }
+            }

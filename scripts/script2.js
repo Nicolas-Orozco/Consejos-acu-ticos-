@@ -5,10 +5,6 @@ let carouselbutton1 = document.getElementById('carouselbutton1');
 let carouselbutton2 = document.getElementById('carouselbutton2');
 let sound1 = new Audio('https://drive.google.com/uc?export=download&id=1tvHrCBnzKByMSxPkVJ2ei5yR6vZwnA5q');
 let sound2 = new Audio('https://drive.google.com/uc?export=download&id=18cxn99E5PHdOH7AtlvQK1dIdONDp5LOG');
-window.onload = function(){
-ambient.volume = 0.08;
-ambient.play();
-}
 line1.addEventListener('animationend', () => {
   carousel.classList.remove("ocultar")
   carousel.classList.add("enterpostit")
