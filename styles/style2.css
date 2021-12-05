@@ -141,3 +141,18 @@ body{
                 transform: rotate(360deg);
               }
             }
+/*FONDO*/
+#fondo{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+   position: fixed;
+  top: 0;
+   left: 0;
+    z-index: -1;
+background: rgb(227,148,64);
+background: -moz-linear-gradient(0deg, rgba(227,148,64,1) 45%, rgba(255,96,61,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(227,148,64,1) 45%, rgba(255,96,61,1) 100%);
+background: linear-gradient(0deg, rgba(227,148,64,1) 45%, rgba(255,96,61,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e39440",endColorstr="#ff603d",GradientType=1);
+}
