@@ -125,6 +125,7 @@ body{
     min-height:40px;
   }
 }
+/*Sun animation*/
 #sun {
   width:100px;
   position: fixed;
@@ -141,6 +142,20 @@ body{
                 transform: rotate(360deg);
               }
             }
+/*Ambient icon animation*/
+#ambientbtn{
+  background-color:rgb(255, 45, 45); 
+  border-radius: 50%;
+    width:70px;
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+#ambientbtn:active {
+  background-color: rgb(255, 236, 61)
+}
 /*FONDO*/
 #fondo{
   object-fit: cover;
