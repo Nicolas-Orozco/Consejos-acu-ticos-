@@ -153,8 +153,21 @@ body{
   padding: 0.5rem;
   cursor: pointer;
 }
-#ambientbtn:active {
-  background-color: rgb(255, 236, 61)
+/*Arrow for ambient icon*/
+#arrow{
+  width: 75px;
+  position: fixed;
+    left: 5.2rem;
+  top: 1rem;
+  padding: 0.5rem;
+}
+@keyframes arrowfade {
+  0% {
+    opacity: 1.0;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 /*FONDO*/
 #fondo{
