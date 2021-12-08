@@ -25,7 +25,7 @@ body{
     width:100%;
   }
 }
-.ocultar {
+.hide {
   display: none;
 }
 .enterpostit{
@@ -79,7 +79,7 @@ body{
 	}
 }
 .car-image:hover{
-   filter: brightness(1.05);
+   filter: brightness(1.10);
 }
 /*https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100*/
 .waves {

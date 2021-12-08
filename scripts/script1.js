@@ -1,3 +1,4 @@
+/*FUNCTION WITH SWITCH, AND COUNT TO VIDEO SOURCE AND POSTER*/
 var count = 1;
 var video1 = document.getElementById("video1");
 var playPromise = video1.play()
@@ -7,7 +8,7 @@ function changevideo() {
     switch (count) {
       case 1:
         video1.src = "https://drive.google.com/uc?export=download&id=16ieR8-KC9ooK5-QGEIUTH53at45h5tAe";
-                video1.poster = "images/poster4.jpg";
+                video1.poster = "images/posters/poster4.jpg";
         if (playPromise !== undefined) {
           playPromise.then(_ => {
           })
@@ -17,7 +18,7 @@ function changevideo() {
         break;
       case 2:
         video1.src = "https://drive.google.com/uc?export=download&id=1eRSO5cFHzBu7zILbAwa6FdnqDwL5iN6s";
-                video1.poster = "images/poster3.jpg";
+                video1.poster = "images/posters/poster3.jpg";
         if (playPromise !== undefined) {
           playPromise.then(_ => {
           })
@@ -27,7 +28,7 @@ function changevideo() {
         break;
       case 3:
         video1.src = "https://drive.google.com/uc?export=download&id=11lQcd0MB6NoPMr3TIkwYgrTcrTqaRCqg";
-                video1.poster = "images/poster2.jpg";
+                video1.poster = "images/posters/poster2.jpg";
         if (playPromise !== undefined) {
           playPromise.then(_ => {
           })
@@ -37,7 +38,7 @@ function changevideo() {
         break;
       case 4:
         video1.src = "https://drive.google.com/uc?export=download&id=1R4zDjVc5l4BEtc0wVlHTD0ZHLN7OxK6x";
-                video1.poster = "images/poster1.jpg";
+                video1.poster = "images/posters/poster1.jpg";
         if (playPromise !== undefined) {
           playPromise.then(_ => {
           })
@@ -58,6 +59,8 @@ document.getElementById("boton").addEventListener("click",function(){
     }, 2000);
 })
 */
+
+/*DISPLAY THE ANIMATION, HIDE THE BUTTON, AND REDIRECT TO THE POST IT PAGE WHEN CLICKED */
 const $ = document.querySelector.bind(document);
 $('button').addEventListener("click", function () {
   $('button').style.display = 'none';
@@ -65,6 +68,7 @@ $('button').addEventListener("click", function () {
   (document.getElementById("main")).remove();
   window.location.href = "postit.html";
 });
+/*LOADING ANIMATION AND FADE */
 window.onload = function () {
   var fadeTarget = document.getElementById("spinner");
   var fadeEffect = setInterval(function () {
@@ -81,5 +85,5 @@ window.onload = function () {
     }
   }, 150);
   var main = document.getElementById("main")
-  main.classList.remove("ocultar");
+  main.classList.remove("hide");
 }
