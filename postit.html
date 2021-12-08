@@ -3,117 +3,127 @@
 <html lang="es">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Post-its</title>
-	<meta name="description" content="Post-its e información">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="images/favicons/fish2.svg"/>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="styles/style2.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Post-its</title>
+    <meta name="description" content="Post-its e información">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicons/fish2.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/285784b7ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style2.css">
 </head>
 
 <body>
-  <!--Fondo-->
-<aside id="fondo"></aside>
-<!---Bootstrap container-->
- <main class="container-fluid">
-   <div class="row p-5 m-3">
-     <section class="col">
-    <article class="line"></article>
-    <article class="line line-2"></article>
-     </section>
-   </div>
-   <div class="row">
-     <section class="col-sm">
-     <div id="carousel" class="carousel slide carousel-dark hide mb-5" data-bs-interval="false" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active p-2">
-            <a href="https://www.vivus.es/blog/medidas-para-ahorrar-agua">
-      <img src="images/finalpost1.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
-            </a>
+    <!--background-->
+    <aside id="background"></aside>
+    <!---Bootstrap container-->
+    <main class="container-fluid">
+        <div class="row p-5 m-3">
+            <section class="col">
+                <article class="line"></article>
+                <article class="line line-2"></article>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col">
+                <div id="carousel" class="carousel slide carousel-dark hide mb-5" data-bs-interval="false" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active p-2">
+                            <a href="https://www.vivus.es/blog/medidas-para-ahorrar-agua">
+                                <img src="images/finalpost1.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
+                            </a>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <a href="https://blog.britanico.edu.pe/habitos-ahorrar-agua-en-casa-eficazmente/">
+                                <img src="images/finalpost2.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
+                            </a>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <a href="https://www.lahipotesisgaia.com/32-habitos-ahorrar-agua/">
+                                <img src="images/finalpost3.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
+                            </a>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <a href="https://ayudaenaccion.org/ong/blog/sostenibilidad/ahorrar-agua-medio-ambiente/">
+                                <img src="images/finalpost4.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
+                            </a>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <a href="https://tarifasdeagua.es/info/ahorro-agua">
+                                <img src="images/finalpost5.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
+                            </a>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <a href="https://www.aguasresiduales.info/revista/blog/22-consejos-utiles-para-ahorrar-agua-en-el-dia-mundial-del-agua">
+                                <img src="images/finalpost6.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
+                            </a>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <a href="https://www.fundacionaquae.org/ahorrar-agua-ahora-escasea/">
+                                <img src="images/finalpost7.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
+                            </a>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <a href="https://www.apeseg.org.pe/2019/03/cuatro-tips-para-ahorrar-agua-en-casa/">
+                                <img src="images/finalpost8.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
+                            </a>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <a href="https://www.sedapar.com.pe/portal-maestro/yo-cuido-al-agua/ideas-para-ahorrar-agua/">
+                                <img src="images/finalpost9.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
+                            </a>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <a href="https://www.bbva.com/es/py/consejos-practicos-para-contribuir-al-ahorro-del-agua/">
+                                <img src="images/finalpost10.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" id="carouselbutton1">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next" id="carouselbutton2">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col">
+                <p id="textadvise" class="h2 text-center text-white hide">No olvides que puedes buscar más informacion dando click a cada post it (~_^)</p>
+            </section>
+        </div>
+    </main>
+    <!--Olas https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100-->
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(64, 143, 255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(64, 143, 255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(64, 143, 255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#408fff" />
+            </g>
+        </svg>
     </div>
-    <div class="carousel-item p-2">
-      <a href="https://blog.britanico.edu.pe/habitos-ahorrar-agua-en-casa-eficazmente/">
-      <img src="images/finalpost2.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
-            </a>
-    </div>
-    <div class="carousel-item p-2">
-      <a href="https://www.lahipotesisgaia.com/32-habitos-ahorrar-agua/">
-      <img src="images/finalpost3.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
-      </a>
-    </div>
-        <div class="carousel-item p-2">
-      <a href="https://ayudaenaccion.org/ong/blog/sostenibilidad/ahorrar-agua-medio-ambiente/">
-      <img src="images/finalpost4.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
-      </a>
-    </div>
-        <div class="carousel-item p-2">
-      <a href="https://tarifasdeagua.es/info/ahorro-agua">
-      <img src="images/finalpost5.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
-      </a>
-    </div>
-        <div class="carousel-item p-2">
-      <a href="https://www.aguasresiduales.info/revista/blog/22-consejos-utiles-para-ahorrar-agua-en-el-dia-mundial-del-agua">
-      <img src="images/finalpost6.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
-      </a>
-    </div>
-      <div class="carousel-item p-2">
-      <a href="https://www.fundacionaquae.org/ahorrar-agua-ahora-escasea/">
-      <img src="images/finalpost7.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
-      </a>
-    </div>
-      <div class="carousel-item p-2">
-      <a href="https://www.apeseg.org.pe/2019/03/cuatro-tips-para-ahorrar-agua-en-casa/">
-      <img src="images/finalpost8.png" class="d-block mw-100 m-auto car-image" alt="Cargando">
-      </a>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" id="carouselbutton1">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next"  id="carouselbutton2">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-       </section>
-   </div>
-   <div class="row">
-     <section class="col">
-       <p id="textadvise" class="h2 text-center text-white hide">No olvides que puedes buscar más informacion dando click a cada post it (~_^)</p>
-     </section>
-   </div>
-</main>
-<!--Olas https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100-->
-<div>
-<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-<defs>
-<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-</defs>
-<g class="parallax">
-<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(64, 143, 255,0.7" />
-<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(64, 143, 255,0.5)" />
-<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(64, 143, 255,0.3)" />
-<use xlink:href="#gentle-wave" x="48" y="7" fill="#408fff" />
-</g>
-</svg>
-</div>
-<!---Sol-->
-<img src="images/sun.svg" id="sun">
-<!--Ambient icon-->
-<img src="images/ambient.svg" id="ambientbtn">
-<!--Left arrow-->
-<img src="images/arrow.svg" id="arrow">
-<!--Links in other tab-->
-<base target="_blank">
-<!--Footer-->
-<footer class="badge bg-light text-wrap position-fixed bottom-0 end-0 rounded-0">
-  <p class="text-center fw-bold text-black">Hecho con <span style="color:#e25555">&hearts;</span> por <a class="link-primary" href="https://github.com/Nicolas-Orozco">Nicolas Orozco</a></p>
-</footer>
-<!---SCRIPTS-->
-  <script src="scripts/script2.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!---Sol-->
+    <img src="images/sun.svg" id="sun">
+    <!--Ambient icon-->
+    <img src="images/ambient.svg" id="ambientbtn">
+    <!--Left arrow-->
+    <img src="images/arrow.svg" id="arrow">
+    <!--Links in other tab-->
+    <base target="_blank">
+    <!--Footer-->
+    <footer class="badge bg-light text-wrap position-fixed bottom-0 end-0 rounded-0">
+        <p class="text-center m-auto p-1 fw-bold text-black">Hecho con un <i class="fas fa-keyboard"></i> por <a class="link-primary" href="https://github.com/Nicolas-Orozco">Nicolas Orozco</a></p>
+    </footer>
+    <!---SCRIPTS-->
+    <script src="scripts/script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

@@ -1,186 +1,229 @@
-body{
-     overflow-x: hidden;
-}
-.line {
-  display:block;
-  position:absolute;
-  top:17%;
-  left:50%;
-  border-bottom:4px solid #9c9c9c;
-  width:0%;
-  text-align:center;
-  animation: line 2.3s linear forwards;
-}
-.line-2 {
-  top:16.6%;
-  border-bottom:4px solid #cecece;
-}
-@keyframes line {
-  from {
-    left:0%;
-    width:0%;
-  }
-  to {
-    left:0%;
-    width:100%;
-  }
-}
-.hide {
-  display: none;
-}
-.enterpostit{
-  position: absolute;
-  top:12.5%;
-  right:-70%;
-  animation: rightocenter 2s linear forwards;
-}
-@keyframes rightocenter {
- from {
-  right:-70%;
- }
- to {
-   right:26%;
- }
-}
-.textup {
-  padding-top: 4.8%;
-  animation: textopacityup 0.65s linear forwards;
-}
-@keyframes textopacityup {
-  0% {
-    opacity: 0.01
-  }
-  50% {
-    opacity: 0.4;
-        padding-top:3.3%;
-  }
-  100% {
-    opacity: 1.0;
-    padding-top:1%;
-  }
-}
-/*Flotado https://codepen.io/MarioDesigns/pen/woJgeo*/
-.car-image {
-  	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.4);
-    	animation: flotar 2.8s ease-in-out infinite;
-}
-@keyframes flotar {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.4);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-10px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.4);
-		transform: translatey(0px);
-	}
-}
-.car-image:hover{
-   filter: brightness(1.10);
-}
-/*https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100*/
-.waves {
-  position:fixed;
-  bottom: 0;
-  width: 100%;
-  height:15vh;
-  margin-bottom:-7px;
-  min-height:100px;
-  max-height:150px;
+body {
+    overflow-x: hidden;
 }
 
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+.line {
+    display: block;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    border-bottom: 4px solid #9c9c9c;
+    width: 0%;
+    text-align: center;
+    animation: line 2.3s linear forwards;
 }
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
+
+.line-2 {
+    top: 16.6%;
+    border-bottom: 4px solid #cecece;
 }
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
+
+@keyframes line {
+    from {
+        left: 0%;
+        width: 0%;
+    }
+
+    to {
+        left: 0%;
+        width: 100%;
+    }
 }
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
+
+.hide {
+    display: none;
 }
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
+
+.enterpostit {
+    position: absolute;
+    top: 12.5%;
+    right: -70%;
+    animation: rightocenter 2s linear forwards;
 }
+
+@keyframes rightocenter {
+    from {
+        right: -70%;
+    }
+
+    to {
+        right: 26%;
+    }
+}
+
+.textup {
+    padding-top: 4.8%;
+    animation: textopacityup 0.65s linear forwards;
+}
+
+@keyframes textopacityup {
+    0% {
+        opacity: 0.01
+    }
+
+    50% {
+        opacity: 0.4;
+        padding-top: 3.3%;
+    }
+
+    100% {
+        opacity: 1.0;
+        padding-top: 1%;
+    }
+}
+
+/*Flotado https://codepen.io/MarioDesigns/pen/woJgeo*/
+.car-image {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
+    animation: flotar 2.8s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-10px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
+        transform: translatey(0px);
+    }
+}
+
+.car-image:hover {
+    filter: brightness(1.10);
+}
+
+/*https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100*/
+.waves {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+    z-index: -1;
+}
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
 @keyframes move-forever {
-  0% {
-   transform: translate3d(-90px,0,0);
-  }
-  100% { 
-    transform: translate3d(85px,0,0);
-  }
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
 }
+
 @media (max-width: 768px) {
-  .waves {
-    height:40px;
-    min-height:40px;
-  }
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
 }
+
 /*Sun animation*/
 #sun {
-  width:100px;
-  position: fixed;
-  right: 0;
-  top: 0;
-   animation: rotar 4s linear infinite;
+    width: 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    animation: rotar 4s linear infinite;
 }
-    @keyframes rotar {
-              0% {
-                transform: rotate(0deg);
-              }
-            
-              100% {
-                transform: rotate(360deg);
-              }
-            }
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /*Ambient icon animation*/
-#ambientbtn{
-  background-color:rgb(255, 45, 45); 
-  border-radius: 50%;
-    width:70px;
-  position: fixed;
-  left: 1rem;
-  top: 1rem;
-  padding: 0.5rem;
-  cursor: pointer;
+#ambientbtn {
+    background-color: rgb(255, 45, 45);
+    border-radius: 50%;
+    width: 70px;
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
 }
+
 /*Arrow for ambient icon*/
-#arrow{
-  width: 75px;
-  position: fixed;
+#arrow {
+    width: 75px;
+    position: fixed;
     left: 5.2rem;
-  top: 1rem;
-  padding: 0.5rem;
+    top: 1rem;
+    padding: 0.5rem;
 }
+
 @keyframes arrowfade {
-  0% {
-    opacity: 1.0;
-  }
-  100%{
-    opacity: 0;
+    0% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*background*/
+#background {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(227, 148, 64);
+    background: -moz-linear-gradient(0deg, rgba(227, 148, 64, 1) 45%, rgba(255, 96, 61, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(227, 148, 64, 1) 45%, rgba(255, 96, 61, 1) 100%);
+    background: linear-gradient(0deg, rgba(227, 148, 64, 1) 45%, rgba(255, 96, 61, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e39440", endColorstr="#ff603d", GradientType=1);
+}
+@media (max-width: 810px) {
+  #textadvise{
+    font-size: 1.3rem;
   }
 }
-/*FONDO*/
-#fondo{
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-   position: fixed;
-  top: 0;
-   left: 0;
-    z-index: -1;
-background: rgb(227,148,64);
-background: -moz-linear-gradient(0deg, rgba(227,148,64,1) 45%, rgba(255,96,61,1) 100%);
-background: -webkit-linear-gradient(0deg, rgba(227,148,64,1) 45%, rgba(255,96,61,1) 100%);
-background: linear-gradient(0deg, rgba(227,148,64,1) 45%, rgba(255,96,61,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e39440",endColorstr="#ff603d",GradientType=1);
+@media (max-height: 770px) {
+  #textadvise{
+    font-size: 1rem;
+  }
 }
