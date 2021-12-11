@@ -1,2 +1,2 @@
-# Consejos-acu-ticos-
+# Consejos-acuaticos-
 Project with Replit
