@@ -1,31 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /*GOOGLE FONT*/
 body {
     font-family: 'Changa', sans-serif;
     overflow-y: hidden;
 }
 
-/*
-  #title {
-    text-transform: uppercase;
-     text-shadow: rgba(0,0,0,.01) 0 0 10px;
-     color: white;
-    
-
-         -webkit-text-stroke: 0.07em #239AD6;
-       word-break: break-all;
-       margin-bottom: -2rem;
-  }
-  #subtitle {
-       text-shadow: rgba(0,0,0,.01) 0 0 10px;
-          color: white;
-           
-
-                    -webkit-text-stroke: 0.07em #239AD6;
-  }
-*/
 /*CONVERTING VIDEO TO FULLSCREEN*/
 video {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -41,6 +30,8 @@ video {
     background-color: rgb(255, 255, 255);
     border: none;
     color: #239AD6;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -49,6 +40,8 @@ video {
     cursor: pointer;
     display: inline-block;
     position: relative;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -58,6 +51,8 @@ video {
     opacity: 0;
     top: 0;
     right: -20px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -77,23 +72,38 @@ p {
     left: 0;
     margin: 0;
     background: rgb(255, 255, 255);
-    animation: createBox .5s;
+    -webkit-animation: createBox .5s;
+            animation: createBox .5s;
     width: 100vw;
     height: 100vh;
 }
 
-@keyframes createBox {
+@-webkit-keyframes createBox {
     from {
-        transform: scale(0);
+        -webkit-transform: scale(0);
+                transform: scale(0);
     }
 
     to {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 }
 
-/*CONTAINER FOR THE BOX P*/
-#seccion {
+@keyframes createBox {
+    from {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+/*CONTAINER FOR THE WHITE TRANSITION*/
+#white-transition {
     display: none;
     margin: 0;
     padding: 0;
@@ -110,9 +120,4 @@ p {
     background-color: #033470;
     width: 100%;
     height: 100vh;
-}
-
-/*CLASS TO HIDE ELEMENTS*/
-.hide {
-    display: none;
 }
