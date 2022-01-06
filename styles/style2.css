@@ -121,11 +121,11 @@ body {
 .car-image {
     -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
             box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
-    -webkit-animation: flotar 2.8s ease-in-out infinite;
-            animation: flotar 2.8s ease-in-out infinite;
+    -webkit-animation: float 2.8s ease-in-out infinite;
+            animation: float 2.8s ease-in-out infinite;
 }
 
-@-webkit-keyframes flotar {
+@-webkit-keyframes float {
     0% {
         -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
                 box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
@@ -148,7 +148,7 @@ body {
     }
 }
 
-@keyframes flotar {
+@keyframes float {
     0% {
         -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
                 box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
