@@ -4,5 +4,18 @@ Project with Replit about tips to save and take care of a very valuable resource
 ## Website Link:
 https://consejos-acuaticos-spanish.nicolas-orozco.repl.co/
 ## Images:
-![Imgur Image](https://imgur.com/a/tExvxZF)
-![Imgur Image](https://imgur.com/R9TQxIR)
+![Imgur Image](https://i.imgur.com/OJfP98l.png)
+![Imgur Image](https://i.imgur.com/R9TQxIR.png)
+## I Was Able To Learn:
+
+-CDN Bootstrap v5
+
+
+
+
+-Event listeners, switches, fors, arrow functions, let const
+
+
+
+
+-Autoprefixer plugin of PostCSS
